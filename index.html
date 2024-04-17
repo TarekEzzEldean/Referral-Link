@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teleperformance ID Link Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@latest"></script>
+
+</head>
+<body>
+
+<div class="popup-container">
+    <div class="popup-content" id="step1">
+        <h2>Enter your BMS Ident</h2>
+        <form id="id-form">
+            <label for="id">BMS Ident:</label>
+            <input type="text" id="id" name="id" required>
+            <button type="submit">Generate Link</button>
+        </form>
+    </div>
+
+    <div class="popup-content" id="step2" style="display: none;">
+        <h2>Your Referral Link</h2>
+        <div id="generated-link"></div>
+        <!-- Add button to share link via WhatsApp -->
+        <button id="share-button">Share via WhatsApp</button>
+        <div id="qrBox">
+            <img src="" id="qrImg">
+        </div>
+        <button onclick="generateQrCode()">Generate QR Code</button>
+    </div>
+</div>
+<!-- Add this div for QR code -->
+<div id="qr-code"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
