@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const id = document.getElementById("id").value;
         
         // Generate the link using the entered ID number
-        const link = `https://careerseng-teleperformance.icims.com/jobs/34198/customer-success-specialist-%28m%29---japanese/job?mode=job&iis=RAF&iisn=${id}+-+Anisah+Rosley`;
-        
+        const link = `https://careerseng-teleperformance.icims.com/jobs/40195/telesales-executive---thai-speaker/job?mode=job&iis=RAF&iisn=${id}`;
+=view
         // Update the generated link display as a clickable link
         generatedLink.innerHTML = `<a href="${link}" target="_blank" class="generated-link">${link}</a>`;
         
